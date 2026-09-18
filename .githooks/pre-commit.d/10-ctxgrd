@@ -1,0 +1,11 @@
+#!/bin/sh
+# ctxgrd pre-commit fragment — installed by `ctxgrd hooks install` (ADR-014).
+# Refreshed on every (re-)install; sibling fragments here are never touched.
+command -v ctxgrd >/dev/null 2>&1 || {
+	echo 'ctxgrd not found on PATH — install it or remove this fragment' >&2
+	exit 1
+}
+# Signals commit context so the agents.context-cache rule can warn
+# on cache-busting edits to CLAUDE.md/AGENTS.md (ADR-020).
+export CTXGRD_COMMIT_CONTEXT=1
+exec ctxgrd --root "."

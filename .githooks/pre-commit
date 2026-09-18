@@ -1,0 +1,14 @@
+#!/bin/sh
+# Tracked pre-commit runner — installed by `wrkgrd hooks install`, shared via
+# git under .githooks. Enable with scripts/setup-hooks.sh, or:
+#   git config core.hooksPath .githooks
+# Runs every executable fragment in pre-commit.d/ (lexical order); a non-zero
+# fragment aborts the commit. Drop a sibling gate in as its own fragment.
+set -eu
+dir="$(dirname "$0")/pre-commit.d"
+[ -d "$dir" ] || exit 0
+for fragment in "$dir"/*; do
+	[ -f "$fragment" ] || continue
+	[ -x "$fragment" ] || continue
+	"$fragment" "$@" || exit $?
+done

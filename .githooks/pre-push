@@ -1,0 +1,9 @@
+#!/bin/sh
+# Tracked pre-push hook — installed by `wrkgrd hooks install`, shared via git
+# under .githooks. Guards a release: rejects a push whose tag disagrees with the
+# declared version, changelog, tree state, or tag form (ADR-017).
+command -v wrkgrd >/dev/null 2>&1 || { echo 'wrkgrd not found on PATH — install it or unset core.hooksPath' >&2; exit 1; }
+wrkgrd verify --pre-push || {
+	echo 'release guard blocked the push — fix the issues above, or bypass in an emergency: git push --no-verify' >&2
+	exit 1
+}

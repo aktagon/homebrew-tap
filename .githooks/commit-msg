@@ -1,0 +1,5 @@
+#!/bin/sh
+# Tracked commit-msg hook — installed by `wrkgrd hooks install`, shared via
+# git under .githooks. Enforces Conventional Commits on the subject line.
+command -v wrkgrd >/dev/null 2>&1 || { echo 'wrkgrd not found on PATH — install it or unset core.hooksPath' >&2; exit 1; }
+exec wrkgrd verify --commit-msg "$1"
