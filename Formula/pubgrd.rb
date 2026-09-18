@@ -1,7 +1,6 @@
 class Pubgrd < Formula
   desc "Copy a public repository tree from a private one and verify nothing leaked"
   homepage "https://github.com/aktagon/pubgrd"
-  version "0.2.0"
   license "Elastic-2.0"
 
   on_macos do

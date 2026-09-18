@@ -1,7 +1,6 @@
 class Ctxgrd < Formula
   desc "Lint your context: ADR, PRD, SPEC, HANDOFF and README structure"
   homepage "https://github.com/aktagon/ctxgrd"
-  version "3.0.0"
   license "Elastic-2.0"
 
   on_macos do
