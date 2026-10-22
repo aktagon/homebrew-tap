@@ -17,14 +17,15 @@ brew install aktagon/tap/ctxgrd
 | `pubgrd` | 0.2.0 | Public repository trees copied from private ones |
 | `aigrd` | 0.3.1 | Agent output, judged by a second model against a rubric |
 | `grd` | 0.2.0 | Coordinator: Claude Code hook dispatch, git hook audit |
+| `wrkgrd` | 0.4.0 | Code: build, tests, lint configuration, secret scan |
 
 Each installs a prebuilt binary from the project's GitHub release, for macOS on
 Apple silicon and Intel, and Linux on x86_64. `ctxgrd` and `pubgrd` are licensed
-under the Elastic License 2.0, `aigrd` and `grd` under MIT.
+under the Elastic License 2.0, `aigrd`, `grd` and `wrkgrd` under MIT.
 
 ## Not here yet
 
-`wrkgrd`, `trtlgrd` and `mlgrd` publish no public releases, so they have no
+`trtlgrd` and `mlgrd` publish no public releases, so they have no
 formula. Build them from their own repositories with `make install` until they
 do.
 
