@@ -5,19 +5,19 @@ class Ctxgrd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aktagon/ctxgrd/releases/download/v5.13.0/ctxgrd-v5.13.0-aarch64-apple-darwin.tar.gz"
-      sha256 "296d99a83cf50a691d67c06203b2c8e80d205ac12e7302f3cbb8189b3721bcaf"
+      url "https://github.com/aktagon/ctxgrd/releases/download/v5.14.0/ctxgrd-v5.14.0-aarch64-apple-darwin.tar.gz"
+      sha256 "a1ec55be9921795b095f2787420309db926f9e42b8e407b982ec269960886cd1"
     end
     on_intel do
-      url "https://github.com/aktagon/ctxgrd/releases/download/v5.13.0/ctxgrd-v5.13.0-x86_64-apple-darwin.tar.gz"
-      sha256 "89c515c430bf03fe7888b30e4403fc685c66e3a1c40bffbc74d6e1aab1356405"
+      url "https://github.com/aktagon/ctxgrd/releases/download/v5.14.0/ctxgrd-v5.14.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e15ae977084c8301c6810ea31947608aa7bce9bc35e72b1541f5f3f673138ee2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aktagon/ctxgrd/releases/download/v5.13.0/ctxgrd-v5.13.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9ce69384337aa3060314ecf8c9ccb1747f05eec891ca8ed1e7ce3336316f3fde"
+      url "https://github.com/aktagon/ctxgrd/releases/download/v5.14.0/ctxgrd-v5.14.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "631e69822122f44878c7aba817a0ac39870fe9e40ba87d77a49687fbc0d5cf02"
     end
   end
 
