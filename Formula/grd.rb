@@ -5,19 +5,19 @@ class Grd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aktagon/grd/releases/download/v0.2.0/grd-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c71bb49e2d21c181800bbb8723638fdf8b80d47e484df898f876e0fac1898ea7"
+      url "https://github.com/aktagon/grd/releases/download/v0.3.0/grd-v0.3.0-aarch64-apple-darwin.tar.gz"
+      sha256 "5e2925892442194e91d8503b429f7552442104ce09339797ecf497fb2422953f"
     end
     on_intel do
-      url "https://github.com/aktagon/grd/releases/download/v0.2.0/grd-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c92eb83685db215f49360d3ba96961f670dbc3779740b41c918af974665d0b45"
+      url "https://github.com/aktagon/grd/releases/download/v0.3.0/grd-v0.3.0-x86_64-apple-darwin.tar.gz"
+      sha256 "85e267ce9a416795dca04e30c60f83beeb25b7950524a45c8b11d4dea8150f74"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aktagon/grd/releases/download/v0.2.0/grd-v0.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ef0c5c014676c259db627af507c4fc62f8daca34d4581e64e79c3fc3a8f2e087"
+      url "https://github.com/aktagon/grd/releases/download/v0.3.0/grd-v0.3.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "e7c6ae6eb0cb27132e0faf6a17649fb9ca2e998691173b09676cf3e363409d67"
     end
   end
 
