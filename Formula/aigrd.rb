@@ -5,19 +5,19 @@ class Aigrd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aktagon/aigrd/releases/download/v0.3.1/aigrd-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "9f9ed6cf4717ec5e6fc187c27004eeef90a29fd835f7a596f3746304668c4355"
+      url "https://github.com/aktagon/aigrd/releases/download/v0.4.0/aigrd-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "50b8ea96dc8c00262b7b54b7b56d7de36e6a0c3d9739d3628026872eb995d1df"
     end
     on_intel do
-      url "https://github.com/aktagon/aigrd/releases/download/v0.3.1/aigrd-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "aaf0f3182a1446cc27b90ddf13c4009e6ae4370b5331f64f2ff7b3cf179c7da2"
+      url "https://github.com/aktagon/aigrd/releases/download/v0.4.0/aigrd-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "73111f2f6cf1a9f93a8fc68b7f62d8321859be11d4f800c0c2c09d9257fe79ba"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aktagon/aigrd/releases/download/v0.3.1/aigrd-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "af35cee0bf54e1ed900d2d985e226b6fe04b364bb8bfe32d7b807513ba651ad0"
+      url "https://github.com/aktagon/aigrd/releases/download/v0.4.0/aigrd-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9c079f626c6f2b77fa6a25c565640283e62ea8dd1affab236c3e7a1dd6f407ee"
     end
   end
 
