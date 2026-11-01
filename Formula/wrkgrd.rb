@@ -5,19 +5,19 @@ class Wrkgrd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aktagon/wrkgrd/releases/download/v0.5.0/wrkgrd-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "42dd751771fbd77ea741995d5c76ff5a197dcdfb6cefcf3293e587d368b88e0c"
+      url "https://github.com/aktagon/wrkgrd/releases/download/v0.6.1/wrkgrd-v0.6.1-aarch64-apple-darwin.tar.gz"
+      sha256 "1e76f5034d31b964f23f7960ce58e9d4b957f438c526e86985a990b4c6dbf46b"
     end
     on_intel do
-      url "https://github.com/aktagon/wrkgrd/releases/download/v0.5.0/wrkgrd-v0.5.0-x86_64-apple-darwin.tar.gz"
-      sha256 "ef08bb5f294f0ae490081c5153dced9282edb042e95f6994d0aebc9012035138"
+      url "https://github.com/aktagon/wrkgrd/releases/download/v0.6.1/wrkgrd-v0.6.1-x86_64-apple-darwin.tar.gz"
+      sha256 "348506d27bc71a48a9e918fe255a88ba880fddc095c468882734cd7fd6c9d15b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aktagon/wrkgrd/releases/download/v0.5.0/wrkgrd-v0.5.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1e3aae4e35d1a90f7258e10a6acf70e167ac032c30889b2587b40b7e1440c55f"
+      url "https://github.com/aktagon/wrkgrd/releases/download/v0.6.1/wrkgrd-v0.6.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d22a22646dbb273c1747dfcf5f284cea777df03102a999d919b0c641adce86d5"
     end
   end
 
