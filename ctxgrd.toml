@@ -34,6 +34,7 @@ patterns = [
 
 # pack: project-docs@3.0.0 sha:ce6312bfc9f51ee9
 [ADR]
+summary = "you make an architecture or technical decision; use RFC to propose one for review first"
 owner = "developer"
 rules = [
   "core.frontmatter",
@@ -65,6 +66,7 @@ status = ["draft", "accepted", "rejected", "superseded"]
 
 # pack: project-docs@3.0.0 sha:85e03e716efcbdc9
 [PRD]
+summary = "you scope a product feature and its user requirements; use ROADMAP for the initiative it serves"
 owner = "product-strategist"
 rules = [
   "core.frontmatter",
