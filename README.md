@@ -23,6 +23,21 @@ Each installs a prebuilt binary from the project's GitHub release, for macOS on
 Apple silicon and Intel, and Linux on x86_64. `ctxgrd` and `pubgrd` are licensed
 under the Elastic License 2.0, `aigrd`, `grd` and `wrkgrd` under MIT.
 
+## Rust
+
+`rust-dev` installs one Rust, the latest stable release, through rustup, with
+clippy, rustfmt and the wasm32 browser target. It also installs `cargo-deny`,
+`trunk` and `wasm-bindgen`. It refuses to install beside Homebrew's `rust`,
+whose compiler can't build for wasm32.
+
+```bash
+brew uninstall rust            # if installed
+brew install aktagon/tap/rust-dev
+export PATH="$(brew --prefix rustup)/bin:$PATH"
+rust-dev-setup                 # once per user; again to update
+brew install --cask chromedriver
+```
+
 ## Not here yet
 
 `trtlgrd` and `mlgrd` publish no public releases, so they have no
