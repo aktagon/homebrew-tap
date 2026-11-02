@@ -1,7 +1,6 @@
 class Kache < Formula
   desc "Content-addressed build cache for Rust, used as Cargo's rustc-wrapper"
   homepage "https://github.com/kunobi-ninja/kache"
-  version "1.0.0"
   license "Apache-2.0"
 
   on_macos do
