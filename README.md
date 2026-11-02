@@ -33,10 +33,20 @@ whose compiler can't build for wasm32.
 ```bash
 brew uninstall rust            # if installed
 brew install aktagon/tap/rust-dev
-export PATH="$(brew --prefix rustup)/bin:$PATH"
-rust-dev-setup                 # once per user; again to update
-brew install --cask chromedriver
+mkdir -p "$(brew --prefix)/var/rustup"
+RUSTUP_HOME="$(brew --prefix)/var/rustup" rust-dev-setup   # as the admin; again to update
 ```
+
+Every user then reads that one Rust, from `~/.zshenv`:
+
+```bash
+export RUSTUP_HOME="$(brew --prefix)/var/rustup" RUSTUP_TOOLCHAIN=stable
+export PATH="$(brew --prefix rustup)/bin:$PATH"
+```
+
+`RUSTUP_TOOLCHAIN=stable` stops a project's `rust-toolchain.toml` from
+installing a second version. Homebrew's `chromedriver` cask is disabled
+(it fails macOS Gatekeeper), so browser tests need Chrome for Testing's driver.
 
 ## Not here yet
 
