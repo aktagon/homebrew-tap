@@ -22,11 +22,15 @@ class RustDev < Formula
 
   def caveats
     <<~EOS
-      rustup keeps Rust in each user's home folder, so Homebrew can't install it.
-      As each user who builds, add rustup to your PATH, then run the setup once:
+      rustup keeps Rust in RUSTUP_HOME, ~/.rustup by default, so Homebrew can't
+      install it. For one Rust per machine, as the admin:
+        mkdir -p #{HOMEBREW_PREFIX}/var/rustup
+        RUSTUP_HOME=#{HOMEBREW_PREFIX}/var/rustup rust-dev-setup
+      Then give every user, in ~/.zshenv:
+        export RUSTUP_HOME=#{HOMEBREW_PREFIX}/var/rustup RUSTUP_TOOLCHAIN=stable
         export PATH="#{formula_opt_bin("rustup")}:$PATH"
-        rust-dev-setup
-      Run rust-dev-setup again to update to the newest stable release.
+      RUSTUP_TOOLCHAIN=stable stops a project's rust-toolchain.toml from
+      installing a second version. Rerun the admin step to update.
       Chrome's test driver is a cask: brew install --cask chromedriver
     EOS
   end
