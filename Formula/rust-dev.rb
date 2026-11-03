@@ -31,7 +31,8 @@ class RustDev < Formula
         export PATH="#{formula_opt_bin("rustup")}:$PATH"
       RUSTUP_TOOLCHAIN=stable stops a project's rust-toolchain.toml from
       installing a second version. Rerun the admin step to update.
-      Chrome's test driver is a cask: brew install --cask chromedriver
+      Browser tests need Chrome for Testing's driver: Homebrew's chromedriver
+      cask is disabled, because it fails macOS Gatekeeper.
     EOS
   end
 
