@@ -1,8 +1,8 @@
 #!/bin/sh
 # Installs or updates Rust's latest stable release with rustup, with clippy,
-# rustfmt and the browser target wasm32-unknown-unknown, and makes it the
-# default. Installed by `brew install aktagon/tap/rust-dev`; run it once per
-# user, because rustup keeps Rust in each user's home folder, and again to update.
+# rustfmt, llvm-tools (for cargo-llvm-cov) and the browser target
+# wasm32-unknown-unknown, and makes it the default. Installed by
+# `brew install aktagon/tap/rust-dev`; run it into RUSTUP_HOME, and again to update.
 set -eu
 
 # Formula/rust-dev.rb replaces this with Homebrew rustup's bin folder.
@@ -11,7 +11,7 @@ RUSTUP="@RUSTUP_BIN@/rustup"
 case "${1:-}" in
 -h | --help)
 	echo "usage: rust-dev-setup"
-	echo "Installs or updates Rust stable with rustup (clippy, rustfmt, wasm32-unknown-unknown) and makes it the default."
+	echo "Installs or updates Rust stable with rustup (clippy, rustfmt, llvm-tools, wasm32-unknown-unknown) and makes it the default."
 	exit 0
 	;;
 "") ;;
@@ -21,7 +21,7 @@ case "${1:-}" in
 	;;
 esac
 
-"$RUSTUP" toolchain install stable --profile minimal --component clippy,rustfmt --target wasm32-unknown-unknown
+"$RUSTUP" toolchain install stable --profile minimal --component clippy,rustfmt,llvm-tools --target wasm32-unknown-unknown
 "$RUSTUP" default stable
 
 # One Rust version per machine: name any other toolchain so the user can remove it.
