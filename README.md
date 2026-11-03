@@ -26,7 +26,7 @@ under the Elastic License 2.0, `aigrd`, `grd` and `wrkgrd` under MIT.
 ## Rust
 
 `rust-dev` installs one Rust, the latest stable release, through rustup, with
-clippy, rustfmt and the wasm32 browser target. It also installs `cargo-deny`,
+clippy, rustfmt, llvm-tools (for `cargo llvm-cov`) and the wasm32 browser target. It also installs `cargo-deny`,
 `trunk` and `wasm-bindgen`. It refuses to install beside Homebrew's `rust`,
 whose compiler can't build for wasm32.
 
