@@ -5,12 +5,12 @@ class Ctxgrd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aktagon/ctxgrd/releases/download/v6.1.0/ctxgrd-v6.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "20bf87ce4c7b2beea7f90b534063ea85d1b11cb4fbdef0b278ccab8aebdfc1fd"
+      url "https://github.com/aktagon/ctxgrd/releases/download/v6.2.0/ctxgrd-v6.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9b8892b703c7e54d0b90da18e730bde28dd1ace26bd3dacd245720aec987b71a"
     end
     on_intel do
-      url "https://github.com/aktagon/ctxgrd/releases/download/v6.1.0/ctxgrd-v6.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "71cae4da60caa4d90f2804d900ef31f3d8e9c512ba0706b69a525c06c42f7b05"
+      url "https://github.com/aktagon/ctxgrd/releases/download/v6.2.0/ctxgrd-v6.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "96405614827b333bd722c47621a74f9d646c2701c15f3e59834f381f8785bf4c"
     end
   end
 
