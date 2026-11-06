@@ -5,12 +5,12 @@ class Grd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/aktagon/grd/releases/download/v0.3.0/grd-v0.3.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5e2925892442194e91d8503b429f7552442104ce09339797ecf497fb2422953f"
+      url "https://github.com/aktagon/grd/releases/download/v0.4.0/grd-v0.4.0-aarch64-apple-darwin.tar.gz"
+      sha256 "980fb84be428a1130471bec04b8309c6da0e911b4a7989f8d83eb6263b1aa94d"
     end
     on_intel do
-      url "https://github.com/aktagon/grd/releases/download/v0.3.0/grd-v0.3.0-x86_64-apple-darwin.tar.gz"
-      sha256 "85e267ce9a416795dca04e30c60f83beeb25b7950524a45c8b11d4dea8150f74"
+      url "https://github.com/aktagon/grd/releases/download/v0.4.0/grd-v0.4.0-x86_64-apple-darwin.tar.gz"
+      sha256 "3d942332a3ac3798b8cff045d16fde23e3d441d0e26106d0b15021d0ed8aba27"
     end
   end
 
