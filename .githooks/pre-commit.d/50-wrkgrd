@@ -3,4 +3,4 @@
 # every (re-)install; sibling fragments in this directory are never touched.
 command -v wrkgrd >/dev/null 2>&1 || { echo 'wrkgrd not found on PATH — install it or unset core.hooksPath' >&2; exit 1; }
 wrkgrd verify --staged || exit 1
-exec wrkgrd verify
+exec wrkgrd verify --pre-commit
